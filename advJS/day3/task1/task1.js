@@ -4,16 +4,16 @@ var customObj = function(start, end, step) {
 
     var fillArr = function () {
 
-        arr[0] = start;
+        for (var i = start; i < end; i+=step)
+            arr.push(i);
+    };
 
-        for (i = 1; i < end/step; i ++)
-            arr[i] = start + step;
-    }();
+    fillArr();
 
 
-      Object.defineProperty(customObj, 'popObj', {
+      Object.defineProperty(this, 'popObj', {
         value: function (){
-            this.arr.pop();
+            arr.pop();
         },
 
         writable: false,
@@ -23,7 +23,7 @@ var customObj = function(start, end, step) {
 
       Object.defineProperty(customObj, 'Deq', {
         value: function (){
-            this.arr.shift();
+            arr.shift();
         },
 
         writable: false,
@@ -34,14 +34,14 @@ var customObj = function(start, end, step) {
 
       Object.defineProperty(customObj, 'append', {
         value: function (val){
-            if (this.arr[0] == null)
-            this.arr[0] = input;
+            if (arr[0] == null)
+            arr[0] = input;
         
-            else if (input < this.arr[this.arr.length - 1])
+            else if (input < arr[arr.length - 1])
                 throw new RangeError ("The value should be more than last inserted value}");
             
             else
-                this.arr.push(val);
+                arr.push(val);
         },
 
         writable: false,
@@ -52,14 +52,14 @@ var customObj = function(start, end, step) {
       
       Object.defineProperty(customObj, 'prepend', {
         value: function (val){
-            if (this.arr[0].val == null)
-            this.arr[0].val = input;
+            if (arr[0].val == null)
+            arr[0].val = input;
         
-            else if (input > this.arr[0])
+            else if (input > arr[0])
                 throw new RangeError ("The value should be less than the least value}");
             
             else
-                this.arr.unshift(val);
+                arr.unshift(val);
         },
 
         writable: false,
@@ -68,9 +68,11 @@ var customObj = function(start, end, step) {
       });
     
 
-      Object.defineProperty(customObj.prototype, 'arr', {
-        get: function() {
-          return this.arr;
+
+
+      Object.defineProperty(this, 'getArr', {
+        value : function () {
+          return arr;
         },
         enumerable: true,
         configurable: false
@@ -79,13 +81,14 @@ var customObj = function(start, end, step) {
     }
   
   
-  customObj(0, 8, 2);
+  var newX = new customObj(0, 8, 2);
 
-  console.log(customObj.arr);
+  console.log(newX.getArr());
   
   
+  newX.popObj();
   
-  
+  console.log(newX.getArr());
   
   
   
