@@ -1,0 +1,30 @@
+#img1 {
+    position: relative;
+    top: 225px;
+    left: 0px;
+}
+
+#img2 {
+    position: relative;
+    top: 225px;
+    left: 405px;
+}
+
+#img3 {
+    position: relative;
+    top: 450px;
+    left: 100px;
+}
+
+#divy {
+    height:500px;
+    width: 500px;
+    border: 100px;
+    border: solid;
+    border-color: black;
+}
+
+#starter{
+    position:relative;
+    left: 10;
+}

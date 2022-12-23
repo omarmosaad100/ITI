@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1669218443 source:c:\users\omarm\onedrive\desktop\ds\insertlinkedlist\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	<conio.h>
+	<iostream>
+

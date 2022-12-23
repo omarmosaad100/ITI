@@ -1,0 +1,117 @@
+#div1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+button {
+    background-image: linear-gradient(red, yellow);
+    border-width: 1px;
+    height: 50px;
+    width: 100px;
+    color: blue;
+    font-weight: bold;
+    border-color: blue;
+    box-sizing: 10px;
+    border-style:solid;
+}
+
+
+body {
+    background-image: linear-gradient(lightblue, rgb(188, 222, 233));
+}
+
+#aboutDiv {
+    position: fixed; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 500px;
+    background-image: linear-gradient(red, yellow);
+    color: blue;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+    border-style:solid;
+}
+
+img {
+    position: fixed; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 500px;
+}
+
+
+#servicesDiv {
+    position: relative;
+}
+
+ul {
+    position: absolute;
+    left: -40px;
+
+}
+
+li {
+    background-image: linear-gradient(red, yellow);
+    width: 100px;
+    text-align: center;
+}
+
+#leftImg {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    
+    
+}
+#rightImg {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+
+}
+
+
+#complainDiv {
+    position: fixed; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 500px;
+    background-image: linear-gradient(red, yellow);
+    color: blue;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+    border-style:solid;
+}
+
+
+#galleryBigDiv {
+    background-image: linear-gradient(red, yellow);
+
+}
+
+
+#outputDiv {
+    position: fixed; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 500px;
+    background-image: linear-gradient(red, yellow);
+    color: blue;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+    border-style:solid;
+}

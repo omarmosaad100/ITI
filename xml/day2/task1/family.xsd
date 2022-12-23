@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="family"></xs:element>
+        <xs:element name="grandfather">
+            <xs:complexType mixed="true">
+                <xs:sequence>
+                    <xs:element name="father" maxOccurs="1" type="fatherInfo"/>
+                    <xs:element name="uncle" maxOccurs="unbounded" type="xs:string"/>
+                    <xs:element name="aunt" maxOccurs="unbounded" type="auntInfo"/>
+                </xs:sequence>
+            </xs:complexType>
+
+        </xs:element>
+
+        <xs:complexType mixed="true" name="fatherInfo">
+            <xs:sequence>
+                <xs:element name="mother" type="motherInfo"/>
+                <xs:element name="daughter" type="daughterInfo"/>
+                <xs:element name="son" type="sonInfo"/>
+            </xs:sequence>
+                <xs:attribute ref="job"/>
+          </xs:complexType>
+
+          <xs:complexType name="motherInfo">
+                <xs:attribute name="name" type="xs:string"/>
+          </xs:complexType>
+
+          <xs:complexType name="daughterInfo" mixed="true">
+                <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                        <xs:attribute name="age" type="xs:string"/>
+                        <xs:attribute name="job" type="xs:string"/>
+                    </xs:extension>
+                </xs:simpleContent>
+        </xs:complexType>
+
+        <xs:complexType name="sonInfo" mixed="true">
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="age" type="xs:integer"/>
+                    <xs:attribute name="sport" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+
+    <xs:attribute name="job">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Doctor"/>
+                <xs:enumeration value="Teacher"/>
+                <xs:enumeration value="Engineer"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:complexType name="auntInfo" mixed="true">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="sons" type="xs:integer"/>
+            </xs:extension>
+        </xs:simpleContent>
+</xs:complexType>
+
+
+</xs:schema>

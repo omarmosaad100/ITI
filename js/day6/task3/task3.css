@@ -1,0 +1,16 @@
+.imgy {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+}
+
+.divy {
+    margin: auto;
+    width: 50%;
+  }
+
+  input[type="radio"] {
+    width: 250px;
+    top: -25px;
+    position: relative;
+  }

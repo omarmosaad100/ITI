@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../Styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="div1">
+            <button id="about" val="About">About</button>
+            <button id="gallery" val="Gallery">Gallery</button> 
+            
+
+            <div id="servicesDiv"> 
+                <button id="services" val="Services">Services</button> 
+                <div>
+                    <ul id="servicesList" style="display: none">
+                        <li>Santa's hat</li>
+                        <li>Scarf</li>
+                        <li>Snow Man</li>
+                    </ul>
+                </div> 
+            
+            </div>
+            <button id="complain" val="Complain">Complain</button>
+    </div>
+
+    <div id="aboutDiv">
+        Once upon a time, there was a man called Snow, and he was very kind and pure-hearted.
+        He, of all people, used to give gifts for all kids, along with his best friend Santa Clause.
+        If you want to know more about Santa's story, come back tomorrow!
+    </div>
+
+
+    <div id="galleryBigDiv">
+        <div id="galleryDiv" hidden>
+            <img id="galleryImage" src="../images/1.jpg"/>
+        </div>
+        <img id="leftImg" hidden src="../images/left.png"/>
+        <img id="rightImg" hidden src="../images/right.png"/>
+    </div>
+
+
+    <div id="complainDiv" hidden>
+        <form>
+            <label for="name">Name</label>
+            <input name="name" id="user-name" type="text"/>
+            <br><br>
+            <label for="email">Email</label>
+            <input name="email" id="user-email" type="text"/>
+            <br><br>
+            <label for="phone">Phone</label>
+            <input name="phone" id="user-phone" type="number"/>
+            <br><br>
+            <div>
+                <textarea id="user-complain" placeholder="Your complain..." name="complainText" rows="4" cols="50"></textarea>
+                <button type="button" id="transformer" name="transformer">Send</button>
+                <br>
+            </div>
+        </form>
+    </div>
+
+    <div id="outputDiv" hidden>
+        
+    </div>
+
+</body>
+<script src="../Libraries/jqueryDev.js"></script>
+<script src="../Scripts/script.js"></script>
+</html>

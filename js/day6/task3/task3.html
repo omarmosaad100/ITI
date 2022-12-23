@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card generator</title>
+
+    <hr>
+    <h1 style="text-align: center">Generate Get Well Soon Card</h1>
+    <hr>
+</head>
+<body style="background-color: lightblue">
+    <div class="divy">
+
+        <img class="imgy" src="images/gws1.jpg">
+        
+        <img class="imgy" src="images/gws2.jpg">
+        
+        <img class="imgy" src="images/gws3.png">
+        
+        <br><br><br><br>
+    </div>
+
+    <div class="divy">
+        <input type="radio" name="selector" value="images/gws1.jpg">
+        <input type="radio" name="selector" value="images/gws2.jpg">
+        <input type="radio" name="selector" value="images/gws3.png">
+
+    </div>
+    <div class="divy">
+        <img class="imgy" src="images/gws4.jpg">
+
+        <img class="imgy" src="images/gws5.jpg">
+
+        <img class="imgy" src="images/gws6.jpg">
+    </div>
+
+    <div class="divy">
+        <input type="radio" name="selector" style ="top: 25px" value="images/gws4.jpg">
+        <input type="radio" name="selector" style ="top: 25px" value="images/gws5.jpg">
+        <input type="radio" name="selector" style ="top: 25px" value="images/gws6.jpg">
+
+    </div>
+    <div style="text-align: center">
+        <br>
+        <h2>Personal Message</h2>
+        <textarea rows="10" cols="75"></textarea>
+        <br>
+        <button onclick="createImage()" id="generator">Generate</button>
+    </div>
+</body>
+<link rel="stylesheet" href="task3.css">
+<script src="task3.js"></script>
+</html>
