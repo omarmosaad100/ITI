@@ -1,0 +1,8 @@
+.sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cartoon-guy {
+    height: 200px;
+}
