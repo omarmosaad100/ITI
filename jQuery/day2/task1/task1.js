@@ -1,5 +1,5 @@
 $(function() {
-
+//each millisecond, the left is increased by 1
     var timer = setInterval(function (){
         if ($("#carImg").css("left") == "1400px")
             stopTimer();
