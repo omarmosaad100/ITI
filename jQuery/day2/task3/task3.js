@@ -4,7 +4,7 @@ $(function(){
         drop: function (event, ui) {
             var draggable = ui.draggable;
 
-            // if the black hole encounters a dropped item on it with id similar to caroon's, hide cartoon
+            // if the black hole encounters a dropped item on it with id similar to caroon's, hide cartoon\\\\\\\\\\\\\\\\\\\
             if (draggable.attr("id") == "cartoonGuy")
                 draggable.hide();
         }

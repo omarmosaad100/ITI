@@ -44,7 +44,7 @@ $(function(){
             });
 
             //note: we used on change not on click, because we want the user redirected every time he/she changes their selection
-            //we used window.open not just open, because in this scope this is #artists, thus open would not be found in this scope
+            //we used window.open not just open, because in this scope this is #artists, thus open would not be found in this scope\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
         },
         complete: function(){
