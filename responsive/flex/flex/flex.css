@@ -1,0 +1,41 @@
+.flexDouble {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.flex-Container {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    font-size: 12px;
+    
+}
+
+.flex-Footers {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    flex: 1;
+}
+
+.text {
+    font-size: 7px;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.footer-text {
+    background-color: lightgray;
+    text-align: center;
+}

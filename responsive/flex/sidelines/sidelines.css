@@ -1,0 +1,56 @@
+.big {
+    color: white;
+}
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+
+.header {
+    display: flex;
+    background-color: blue;
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+    height: 25px;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 80px;
+    width: 275px;
+}
+
+.side {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    width: 0;
+    font-size: 7px;
+}
+
+.main {
+    width: 0;
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+    flex: 3;
+    font-size: 7px;
+}
+
+.footer {
+    display: flex;
+    background-color: blue;
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+    height: 25px;
+    align-items: center;
+}

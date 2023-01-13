@@ -1,0 +1,21 @@
+.big {
+    display: flex;
+    justify-content: center;
+}
+
+.cointaner {
+    display: flex;
+    border: solid 1px black;
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    border: solid 1px orange;
+    font-size: 5px;
+    height: 15px;
+    width: 40px;
+
+}
