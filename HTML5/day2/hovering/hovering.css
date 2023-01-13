@@ -1,0 +1,27 @@
+body {
+    height: 200px;
+    position: relative;
+
+}
+#blinker {
+    border-radius: 20px;
+    outline: blue solid;
+    outline-width: 1px;
+    background-color: lightblue;
+    height: 30px;
+    width: 120px;
+    margin: auto;
+    padding-top: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    
+}
+
+#blinker:hover {
+    background-color: pink;
+
+}

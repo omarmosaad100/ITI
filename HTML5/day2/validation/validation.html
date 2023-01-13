@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link href="validation.css" rel="stylesheet"/>
+</head>
+<body>
+    <section>
+        <div><h1>Change Email Address</h1></div>
+        <form>
+            <input type="text" placeholder="Username" required/>
+            <div>The required username may only be a series of alphabetical characters.</div>
+            <br>
+            <input type="text" placeholder="Email" required pattern="^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]+$"/>
+            <div>The required email address may not include any special characters other than the '@' sign.</div>
+            <br>
+            <button id="changer">Change</button>
+        </form>
+    </section>
+</body>
+<script src="validation.js"></script>
+</html>

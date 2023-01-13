@@ -1,0 +1,15 @@
+@keyframes anim {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+#img {
+    animation-name: anim;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}

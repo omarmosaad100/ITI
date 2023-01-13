@@ -1,0 +1,6 @@
+input:valid{
+    outline: 2px solid green;
+}
+input:invalid{
+    outline: 2px solid red;
+}

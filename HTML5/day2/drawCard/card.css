@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+
+#card {
+    height: 100px;
+    width: 70px;
+    border: 2px solid red;
+    content: '♠';
+    justify-content: center;
+    position: relative;
+}
+
+#upperleft {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    font-family: 'Ceviche One', cursive;
+}
+
+#lowerright {
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+    font-family: 'Ceviche One', cursive;
+}
+
+#middle {
+    line-height: 200%;
+    text-align: center;
+    font-size: 40px;
+}
+
